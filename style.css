@@ -1,89 +1,53 @@
-* {
-    box-sizing: border-box;
-}
-
-h1 {
-    text-align: center;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.section1, .section2, .section3 {
-    position: relative;
-    margin: 5px;
-    padding: 10px;
-    padding-top: 20px;
+.section {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 20px;
     border: 1px solid black;
+    margin-bottom: 20px;
+    position: relative;
 }
 
-.section1 {
-    background-color: #007bff; /* Blue */
+.section h2 {
+    margin-top: 0;
 }
 
-.section2 {
-    background-color: #ff0; /* Yellow */
-}
-
-.section3 {
-    background-color: #f00; /* Red */
-}
-
-@media (min-width: 992px) {
-    .section {
-        width: 25%;
-        display: inline-flex;
-        padding: 15px;
-        float: left;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .container {
-        display: block;
-        margin: 5px;
-        padding: 5px;
-    }
-    .section1, .section2 {
-        width: 45%;
-        display: inline-flex;
-        margin: 2px;
-    }
-    .section3 {
-        width: 91%;
-    }
-}
-
-@media (max-width: 767px) {
-    .container {
-        display: block;
-    }
-}
-
-.title1, .title2, .title3 {
+.section-title {
     position: absolute;
     top: 0;
     right: 0;
-    margin: 0;
-    padding-inline: 20px;
-    font-weight: 850;
-    font-size: large;
+    background-color: #FFD700; /* Gold */
+    color: black;
+    padding: 5px 10px;
     border: 1px solid black;
+    border-bottom-left-radius: 5px;
+    font-size: 14px;
 }
 
-.title1 {
-    background-color: #007bff; /* Blue */
+@media screen and (max-width: 991px) {
+    .section {
+        width: 50%;
+    }
+    .section:nth-child(3) {
+        clear: both;
+    }
 }
 
-.title2 {
-    background-color: #ff0; /* Yellow */
-}
-
-.title3 {
-    background-color: #f00; /* Red */
+@media screen and (max-width: 767px) {
+    .section {
+        width: 100%;
+    }
 }
