@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Layout</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="section">
+    <div class="section-title">Chicken</div>
+    <h2>Chicken Section</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula accumsan elit, id sodales ex condimentum et.</p>
+  </div>
+  <div class="section">
+    <div class="section-title">Beef</div>
+    <h2>Beef Section</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula accumsan elit, id sodales ex condimentum et.</p>
+  </div>
+  <div class="section">
+    <div class="section-title">Sushi</div>
+    <h2>Sushi Section</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula accumsan elit, id sodales ex condimentum et.</p>
+  </div>
+</div>
+
+</body>
+</html>
